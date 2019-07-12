@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>ToyToys</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="ToyToys">
+	<meta name="keywords" content="ToyToys, ecommerce, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="../img/32060-2-present.png" rel="shortcut icon"/>
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="../css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="../css/flaticon.css"/>
+	<link rel="stylesheet" href="../css/slicknav.min.css"/>
+	<link rel="stylesheet" href="../css/jquery-ui.min.css"/>
+	<link rel="stylesheet" href="../css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="../css/animate.css"/>
+	<link rel="stylesheet" href="../css/style.css"/>
+
+
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 text-center text-lg-left">
+						<!-- logo -->
+						<a href="./index.html" class="site-logo">
+							<img src="../img/logo_small.png" alt="">
+						</a>
+					</div>
+					<div class="col-xl-6 col-lg-5">
+						<form class="header-search-form">
+							<input type="text" placeholder="Buscar un producto ...">
+							<button><i class="flaticon-search"></i></button>
+						</form>
+					</div>
+					<div class="col-xl-4 col-lg-5 text-lg-right">
+						<div class="user-panel">
+							<div class="up-item">
+									<div class="panel-group" id="accordion">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
+										</span><i class="flaticon-profile"></i> Frank Hesse</a>
+								  </div>
+								  <div id="collapseOne" class="panel-collapse collapse in">
+									<ul class="list-group nav nav-list">
+									  <li class="list-group-item"><span class="glyphicon glyphicon-pencil text-primary"></span><a href="http://fb.com/moinakbarali">Datos de perfil</a></li>
+									  <li class="list-group-item"><span class="glyphicon glyphicon-flash text-success"></span><a href="http://fb.com/moinakbarali">Configuración de cuenta</a></li>
+									  <li class="list-group-item"><span class="glyphicon glyphicon-file text-info"></span><a href="http://fb.com/moinakbarali">Métodos de pago</a></li>
+									  <li class="list-group-item"> <span class="glyphicon glyphicon-comment text-success"></span><a href="http://fb.com/moinakbarali">Premium</a></li>
+									  <li class="list-group-item"> <span class="glyphicon glyphicon-comment text-success"></span><a href="http://fb.com/moinakbarali">Salir</a></li>
+						
+									</ul>
+								</div>
+							</div>
+						<!-- End of list -->
+							<div class="up-item">
+								<div class="shopping-card">
+									<i class="flaticon-bag"></i>
+									<span>2</span>
+								</div>
+								<a href="#">Carrito</a>
+							</div>
+							</div>
+						<!-- End of list -->
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="main-navbar">
+			<div class="container">
+				<!-- menu -->
+				<ul class="main-menu">
+					<li><a href="../index.html">Inicio</a></li>
+					<li><a href="#">Categorías</a>
+						<ul class="sub-menu">
+							<li><a href="#">Video-juegos</a></li>
+							<li><a href="#">Disfraces</a></li>
+							<li><a href="#">Juegos de mesa</a></li>
+							<li><a href="#">Juguetes educativos y libros</a></li>
+							<li><a href="#">Figuras y muñecas</a></li>
+							<li><a href="#">Otros</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Promociones</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- Header section end -->
+
+
+
+	<!-- cart section end -->
+	<section class="cart-section spad">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8">
+						<div class="cart-table">
+							<h3>Items en carrito</h3>
+							<div class="cart-table-warp">
+								<table>
+								<thead>
+									<tr>
+										<th class="product-th">Nombre</th>
+										<th class="quy-th">Cantidad</th>
+										<th class="size-th">Estátus</th>
+										<th class="total-th">Precio</th>
+										<th>Acción</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="product-col">
+											<img src="../img/cart/1.jpg" alt="">
+											<div class="pc-title">
+												<h4>Animal Print Dress</h4>
+												<p>$45.90</p>
+											</div>
+										</td>
+										<td class="quy-col">
+											<div class="quantity">
+												<div class="pro-qty" id="enabledQTY">
+													<input type="text" value="1">
+												</div>
+											</div>
+										</td>
+										<td class="size-col"><h4>Por confirmar</h4></td>
+										<td class="total-col"><h4>$45.90</h4></td>
+										<td class="total-col"><a href="#" class="text-muted">Eliminar</a>
+									</tr>
+									<tr>
+										<td class="product-col">
+											<img src="../img/cart/2.jpg" alt="">
+											<div class="pc-title">
+												<h4>Ruffle Pink Top</h4>
+												<p>$45.90</p>
+											</div>
+										</td>
+										<td class="quy-col">
+											<div class="quantity">
+												<div class="pro-qty">
+													<input type="text" value="1" disabled="disable">
+												</div>
+											</div>
+										</td>
+										<td class="size-col"><h4>Recibido</h4></td>
+										<td class="total-col"><h4>$45.90</h4>
+										<td class="total-col"><a href="#" class="text-muted">Realizar devolución</a>
+										</td>
+
+
+									</tr>
+
+									<tr>
+										<td class="product-col">
+											<img src="../img/cart/3.jpg" alt="">
+
+											<div class="pc-title">
+												<h4>Skinny Jeans</h4>
+												<p>$45.90</p>
+											</div>
+										</td>
+										<td class="quy-col">
+											<div class="quantity">
+												<div class="pro-qty" disabled="disable">
+													<input type="text" value="1" disabled="disable">
+												</div>
+											</div>
+										</td>
+										<td class="size-col"><h4>Procesando</h4></td>
+										<td class="total-col"><h4>$45.90</h4></td>
+										<td class="total-col"><a href="#" class="text-muted">Cancelar pedido</a>
+									</tr>
+								</tbody>
+							</table>
+							</div>
+						</div>
+					</div>
+
+					<!-- summary -->
+					<div class="col-lg-4 card-right">
+							<h3>Resumen de carrito</h3>
+							<div class="ibox-content">
+									<span>
+										Total por pagar
+									</span>
+									<h2 class="font-bold">
+										$91,80
+									</h2>
+		
+									<hr/>
+									<span class="text-muted small">
+										*Para Estados Unidos, Francia y Alemania se cobrarán comisiones adicionales
+									</span>
+								</div>
+						<a href="" class="site-btn">Pagar</a>
+						<a href="" class="site-btn sb-dark">Continuar comprando</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- cart section end -->
+	
+		<!-- Related product section -->
+		<section class="related-product-section">
+			<div class="container">
+				<div class="section-title text-uppercase">
+					<h2>Continuar comprando</h2>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						<div class="product-item">
+							<div class="pi-pic">
+								<div class="tag-new">NUEVO</div>
+								<img src="../img/product/2.jpg" alt="">
+								<div class="pi-links">
+									<a href="#" class="add-card"><i class="flaticon-bag"></i><span>Añadir a carrito</span></a>
+									<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+								</div>
+							</div>
+							<div class="pi-text">
+								<h6>$35,00</h6>
+								<p>Black and White Stripes Dress</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="product-item">
+							<div class="pi-pic">
+								<img src="../img/product/5.jpg" alt="">
+								<div class="pi-links">
+									<a href="#" class="add-card"><i class="flaticon-bag"></i><span>Añadir a carrito</span></a>
+									<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+								</div>
+							</div>
+							<div class="pi-text">
+								<h6>$35,00</h6>
+								<p>Flamboyant Pink Top </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="product-item">
+							<div class="pi-pic">
+								<img src="../img/product/9.jpg" alt="">
+								<div class="pi-links">
+									<a href="#" class="add-card"><i class="flaticon-bag"></i><span>Añadir a carrito</span></a>
+									<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+								</div>
+							</div>
+							<div class="pi-text">
+								<h6>$35,00</h6>
+								<p>Flamboyant Pink Top </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="product-item">
+							<div class="pi-pic">
+								<img src="../img/product/1.jpg" alt="">
+								<div class="pi-links">
+									<a href="#" class="add-card"><i class="flaticon-bag"></i><span>Añadir a carrito</span></a>
+									<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+								</div>
+							</div>
+							<div class="pi-text">
+								<h6>$35,00</h6>
+								<p>Flamboyant Pink Top </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Related product section end -->
+
+
+	<!-- Footer section -->
+	<section class="footer-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-sm-6">
+					<div class="footer-widget about-widget">
+						<h2>Acerca de ToyToys</h2>
+						<p>Donec vitae purus nunc. Morbi faucibus erat sit amet congue mattis. Nullam frin-gilla faucibus urna, id dapibus erat iaculis ut. Integer ac sem.</p>
+						<img src="../img/cards.png" alt="">
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="footer-widget about-widget">
+						<h2>Preguntas frecuentes</h2>
+						<ul>
+							<li><a href="">Comprar</a></li>
+							<li><a href="">Realizar devolución</a></li>
+							<li><a href="">Envíos</a></li>
+							<li><a href="">Términos de uso</a></li>
+							<li><a href="">Atención al cliente</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="footer-widget contact-widget">
+						<h2>Contáctenos</h2>
+						<div class="con-info">
+							<span>C.</span>
+							<p>ToyToys </p>
+						</div>
+						<div class="con-info">
+							<span>D.</span>
+							<p>3316 St. Astonia, NY11106 </p>
+						</div>
+						<div class="con-info">
+							<span>T.</span>
+							<p>+1 212 555 1397</p>
+						</div>
+						<div class="con-info">
+							<span>E.</span>
+							<p>toytoys@gmail.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="social-links-warp">
+			<div class="container">
+				<div class="social-links">
+					<a href="" class="instagram"><i class="fa fa-instagram"></i><span>instagram</span></a>
+					<a href="" class="google-plus"><i class="fa fa-google-plus"></i><span>g+plus</span></a>
+					<a href="" class="facebook"><i class="fa fa-facebook"></i><span>facebook</span></a>
+					<a href="" class="twitter"><i class="fa fa-twitter"></i><span>twitter</span></a>
+					<a href="" class="youtube"><i class="fa fa-youtube"></i><span>youtube</span></a>
+					<a href="" class="tumblr"><i class="fa fa-tumblr-square"></i><span>tumblr</span></a>
+				</div>
+
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> 
+<p class="text-white text-center mt-5">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+			</div>
+		</div>
+	</section>
+	<!-- Footer section end -->
+
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/jquery.slicknav.min.js"></script>
+	<script src="../js/owl.carousel.min.js"></script>
+	<script src="../js/jquery.nicescroll.min.js"></script>
+	<script src="../js/jquery.zoom.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/main.js"></script>
+
+	</body>
+</html>
