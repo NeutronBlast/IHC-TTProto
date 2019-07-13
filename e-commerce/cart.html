@@ -127,7 +127,7 @@
 										<th class="quy-th">Cantidad</th>
 										<th class="size-th">Estátus</th>
 										<th class="total-th">Precio</th>
-										<th>Acción</th>
+										<th class="total-th">Acción</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -191,7 +191,7 @@
 										</td>
 										<td class="size-col"><h4>Procesando</h4></td>
 										<td class="total-col"><h4>$45.90</h4></td>
-										<td class="total-col"><a href="#" class="text-muted">Cancelar pedido</a>
+										<td class="total-col"><a href="#cancel" data-toggle="modal" class="text-muted">Cancelar pedido</a>
 									</tr>
 								</tbody>
 							</table>
@@ -222,74 +222,104 @@
 			</div>
 
 
-			<!-- FORM REGISTER -->
-			<div id="add-user" class="modal fade" aria-hidden="true">
-				<div class="modal-dialog modal-lg">
-					<div class="modal-content">
-						<div class="modal-body">
-							<div class="row">
-								<div class="col-sm-12">
-									<h3 class="m-t-none m-b">Registrar nuevo usuario</h3>
-									<form role="form" id="addusr">
-										<div class="form row">
-											<div class="col-sm-6">
-												<div class="form-group">
-												<label>Nombre de usuario</label> 
-											<input type="text" placeholder="Nombre de usuario" class="form-control" id="user">
-												</div>
-											</div>
-											<div class="col-sm-6">
-												<div class="form-group">
-													<label>Correo electrónico</label> 
-													<input type="email" placeholder="E-mail" class="form-control" id="email">
-												</div>
-											</div>
-										</div>
-										<div class="form row">
-											<div class="col-sm-6">
-												<div class="form-group">
-													<label>Nombre</label> 
-													<input type="text" placeholder="Nombre" class="form-control" id="name">
-												</div>
-											</div>
-											<div class="col-sm-6">
-												<div class="form-group">
-													<label>Apellido</label> 
-													<input type="text" placeholder="Apellido" class="form-control" id="ln">
-												</div>
-											</div>
-										</div>
-										<div class="form row">
-											<div class="col-sm-6">                                            
-												<div class="form-group">
-													<label>Contraseña (Mínimo 8 caracteres)</label>
-													<input type="password" placeholder="Contraseña" class="form-control" id="pass">                                                                    
-												</div>
-											</div>
-											<div class="col-sm-6">
-												<div class="form-group">
-													<label>Confirmar contraseña</label>
-													<input type="password" placeholder="Confirmar contraseña" class="form-control" id="conpw">
-												</div>
-											</div>
-										</div> 
+	<!-- FORM RETURN -->
+		<div id="return" class="modal fade" aria-hidden="true">
+			<div class="modal-dialog modal-md">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3 class="m-t-none m-b">Retornar producto</h3>
+									<form role="form" id="returnp">										
 										<div class="form-group">
-											<label>Permisos</label>
+											<label>¿Por qué quiere devolver este producto?</label>
 										</div>
 										<div>
 											<label> 
-												<input type="radio" value="Administrador" id="r3" name="radio2"> <i></i> Administrador 
+												<input type="radio" value="d" id="r3" name="radio2"> <i></i> Defectuoso 
 											</label>
 										</div>
 										<div>
 											<label> 
-												<input type="radio" value="Empleado" id="r4" name="radio2"> <i></i> Empleado 
+												<input type="radio" value="n" id="r4" name="radio2"> <i></i> No fue lo que esperaba
 											</label>
 										</div>
-										<div>                                                    
+										<div>
+											<label> 
+												<input type="radio" value="o" id="r5" name="radio2"> <i></i> Otro
+											</label>
+										</div>
+												<div class="form-group row">
+														<div class="col-md-12">
+													<label>Especifique</label> 
+													<input type="text" placeholder="Razón" class="form-control" id="reason">
+												</div>
+											</div>
+										<div class="form-group row">
+												<div class="col-md-12">
+													<label>Comentarios</label> 
+														<input type="text" placeholder="Comentarios" class="form-control" id="comments">
+														</div>
+													</div>
+											<div>
 											<!-- SUBMIT -->
-											<button class="btn btn-primary btn-lg float-right ml-2">Cancelar</button>
-											<button class="btn btn-primary btn-lg float-right" type="button" id="submitusr">Registrar</button>
+											<button class="site-btn sb-dark float-right ml-2">Cancelar</button>
+											<button class="site-btn float-right" type="button" id="submitusr">Continuar</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+	<!-- FORM CANCEL -->
+	<div id="cancel" class="modal fade" aria-hidden="true">
+			<div class="modal-dialog modal-md">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3 class="m-t-none m-b">Cancelar pedido</h3>
+									<form role="form" id="cancelp">										
+										<div class="form-group">
+											<label>¿Por qué desea cancelar su pedido?</label>
+										</div>
+										<div>
+											<label> 
+												<input type="radio" value="e" id="r6" name="radio3"> <i></i> Lo añadí al carrito por error
+											</label>
+										</div>
+										<div>
+											<label> 
+												<input type="radio" value="n" id="r7" name="radio3"> <i></i> No fue lo que esperaba
+											</label>
+										</div>
+										<div>
+											<label> 
+												<input type="radio" value="o" id="r8" name="radio3"> <i></i> Otro
+											</label>
+										</div>
+												<div class="form-group row">
+														<div class="col-md-12">
+													<label>Especifique</label> 
+													<input type="text" placeholder="Razón" class="form-control" id="reason">
+												</div>
+											</div>
+										<div class="form-group row">
+												<div class="col-md-12">
+													<label>Comentarios</label> 
+														<input type="text" placeholder="Comentarios" class="form-control" id="comments">
+														</div>
+													</div>
+											<div>
+											<!-- SUBMIT -->
+											<button class="site-btn sb-dark float-right ml-2">Cancelar</button>
+											<button class="site-btn float-right" type="button" id="submitusr">Continuar</button>
 										</div>
 									</form>
 								</div>
