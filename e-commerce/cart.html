@@ -167,7 +167,7 @@
 										</td>
 										<td class="size-col"><h4>Recibido</h4></td>
 										<td class="total-col"><h4>$45.90</h4>
-										<td class="total-col"><a href="#" class="text-muted">Realizar devolución</a>
+										<td class="total-col"><a href="#return" data-toggle="modal" class="text-muted">Realizar devolución</a>
 										</td>
 
 
@@ -217,6 +217,84 @@
 								</div>
 						<a href="" class="site-btn">Pagar</a>
 						<a href="" class="site-btn sb-dark">Continuar comprando</a>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- FORM REGISTER -->
+			<div id="add-user" class="modal fade" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-sm-12">
+									<h3 class="m-t-none m-b">Registrar nuevo usuario</h3>
+									<form role="form" id="addusr">
+										<div class="form row">
+											<div class="col-sm-6">
+												<div class="form-group">
+												<label>Nombre de usuario</label> 
+											<input type="text" placeholder="Nombre de usuario" class="form-control" id="user">
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="form-group">
+													<label>Correo electrónico</label> 
+													<input type="email" placeholder="E-mail" class="form-control" id="email">
+												</div>
+											</div>
+										</div>
+										<div class="form row">
+											<div class="col-sm-6">
+												<div class="form-group">
+													<label>Nombre</label> 
+													<input type="text" placeholder="Nombre" class="form-control" id="name">
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="form-group">
+													<label>Apellido</label> 
+													<input type="text" placeholder="Apellido" class="form-control" id="ln">
+												</div>
+											</div>
+										</div>
+										<div class="form row">
+											<div class="col-sm-6">                                            
+												<div class="form-group">
+													<label>Contraseña (Mínimo 8 caracteres)</label>
+													<input type="password" placeholder="Contraseña" class="form-control" id="pass">                                                                    
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="form-group">
+													<label>Confirmar contraseña</label>
+													<input type="password" placeholder="Confirmar contraseña" class="form-control" id="conpw">
+												</div>
+											</div>
+										</div> 
+										<div class="form-group">
+											<label>Permisos</label>
+										</div>
+										<div>
+											<label> 
+												<input type="radio" value="Administrador" id="r3" name="radio2"> <i></i> Administrador 
+											</label>
+										</div>
+										<div>
+											<label> 
+												<input type="radio" value="Empleado" id="r4" name="radio2"> <i></i> Empleado 
+											</label>
+										</div>
+										<div>                                                    
+											<!-- SUBMIT -->
+											<button class="btn btn-primary btn-lg float-right ml-2">Cancelar</button>
+											<button class="btn btn-primary btn-lg float-right" type="button" id="submitusr">Registrar</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
