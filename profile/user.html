@@ -80,7 +80,6 @@
                     <div id="collapseOne" class="panel-collapse collapse in">
                     <ul class="list-group nav nav-list">
                       <li class="list-group-item"><span class="glyphicon glyphicon-pencil text-primary"></span><a href="../profile/user.html">Datos de perfil</a></li>
-                      <li class="list-group-item"><span class="glyphicon glyphicon-flash text-success"></span><a href="http://fb.com/moinakbarali">Configuración de cuenta</a></li>
                       <li class="list-group-item"><span class="glyphicon glyphicon-file text-info"></span><a href="http://fb.com/moinakbarali">Métodos de pago</a></li>
                       <li class="list-group-item"> <span class="glyphicon glyphicon-comment text-success"></span><a href="http://fb.com/moinakbarali">Premium</a></li>
                       <li class="list-group-item"> <span class="glyphicon glyphicon-comment text-success"></span><a href="http://fb.com/moinakbarali">Salir</a></li>
@@ -191,14 +190,14 @@
                   <div class="row">
                       <div class="col-md-6 pr-md-1">
                         <div class="form-group">
-                          <a href="#" style="color:#f54489">Cambiar contraseña</a>
+                          <a href="#changepw" data-toggle="modal" style="color:#f54489">Cambiar contraseña</a>
                         </div>
                       </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 pr-md-1">
                           <div class="form-group">
-                            <a href="#" style="color:#f54489">Eliminar mi cuenta</a>
+                            <a href="#deleteacc" data-toggle="modal" style="color:#f54489">Eliminar mi cuenta</a>
                           </div>
                         </div>
                       </div>
@@ -235,7 +234,98 @@
         </div>
       </div>
     <br><br><br><br><br>
-      
+
+
+  <!-- FORM DELETE -->
+	<div id="deleteacc" class="modal fade" aria-hidden="true">
+			<div class="modal-dialog modal-md">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3 class="m-t-none m-b">Eliminar mi cuenta</h3>
+									<form role="form" id="deletep">										
+										<div class="form-group">
+											<label>¿Por qué desea eliminar su cuenta?</label>
+										</div>
+										<div>
+											<label> 
+												<input type="radio" value="e" id="r9" name="radio5"> <i></i> El sitio web es difícil de usar
+											</label>
+										</div>
+										<div>
+											<label> 
+												<input type="radio" value="n" id="r10" name="radio5"> <i></i> El sitio web no fué lo que esperaba
+											</label>
+										</div>
+										<div>
+											<label> 
+												<input type="radio" value="o" id="r11" name="radio5"> <i></i> Otro
+											</label>
+										</div>
+												<div class="form-group row">
+														<div class="col-md-12">
+													<label>Especifique</label> 
+													<input type="text" placeholder="Razón" class="form-control" id="reason">
+												</div>
+											</div>
+										<div class="form-group row">
+												<div class="col-md-12">
+													<label>Contraseña</label> 
+														<input type="password" class="form-control" id="password">
+														</div>
+													</div>
+											<div>
+											<!-- SUBMIT -->
+											<button class="site-btn sb-dark float-right ml-2">Cancelar</button>
+											<button class="site-btn float-right" type="button" id="submitusr">Continuar</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+ 
+ 
+  <!-- FORM CHANGE PASSWORD -->
+	<div id="changepw" class="modal fade" aria-hidden="true">
+			<div class="modal-dialog modal-md">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3 class="m-t-none m-b">Cambiar contraseña</h3>
+									<form role="form" id="changep">										
+										<div class="form-group">
+										<div class="form-group row">
+												<div class="col-md-12">
+													<label>Contraseña</label> 
+														<input type="password" class="form-control" id="password">
+														</div>
+													</div>
+											<div>
+                        <div class="form-group row">
+                              <div class="col-md-12">
+                                <label>Confirmar contraseña</label> 
+                                  <input type="password" class="form-control" id="cpassword">
+                                  </div>
+                                </div>
+                            <div>
+											<!-- SUBMIT -->
+											<button class="site-btn sb-dark float-right ml-2">Cancelar</button>
+											<button class="site-btn float-right" type="button" id="submitusr">Continuar</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+          </div>
+        </div>
+      </div>
+    </div>
+				</div>   
  <!-- Footer section -->
  <section class="footer-section">
 		<div class="container">
